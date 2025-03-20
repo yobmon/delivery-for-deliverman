@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+  
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+  height: 100%;
+  min-width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.nav{
+  display: flex;
+ align-items: center;
+  border-right: 10px;
+}
+.nav a{
+  text-decoration: none;
+  padding: 13px;
+  color: black;
+}
+.svg {
+
+background-color: orange;
+border-radius:15px;
+}
+.svg svg{
+
+ color: rgb(255, 255, 255);
+ 
+  }

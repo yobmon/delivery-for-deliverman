@@ -1,0 +1,53 @@
+/* Ensures the main container takes up full width */
+/* Food Grid Container */
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible layout */
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+}
+
+/* Food Card */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background:orange;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Image Styling */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Text Container */
+.container {
+  padding: 16px;
+}
+.food-header{
+  justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .food-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+      gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .food-container {
+      grid-template-columns: repeat(2, 1fr); /* Still 2 per row on smaller phones */
+  }
+}

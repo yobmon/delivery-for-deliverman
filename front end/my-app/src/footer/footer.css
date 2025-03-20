@@ -1,0 +1,128 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  footer {
+   
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  /* Styling the "Our Services" section to be flexbox */
+  .footer-section.services {
+    display: flex;
+    flex-direction: column; /* Stack vertically by default */
+    gap: 15px;
+  }
+  
+  .footer-section.services ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-section.services ul li {
+    list-style-type: none;
+  }
+  
+  .footer-section.services ul li a {
+    color: #818181;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+  
+  .footer-section.services ul li a:hover {
+    color: #f1f1f1;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+  }
+  
+  .footer-section ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #818181;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Bottom Section */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+  
+  .footer-bottom p {
+    margin: 10px 0;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+    }
+  
+    /* Stack the services in a single column on smaller screens */
+    .footer-section.services ul {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    footer {
+      padding: 20px 10px;
+    }
+  
+    .footer-section h3 {
+      font-size: 1.3em;
+    }
+  
+    .footer-section ul li a {
+      font-size: 1em;
+    }
+  }
+  

@@ -1,0 +1,126 @@
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Wrapper to Center the Login Container */
+        .page-wrapper {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            background: linear-gradient(135deg, #ff9a02, #a48f60); /* Gradient background */
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Login Container */
+        .login-container {
+            width: 500%;
+            background: #000000;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Title */
+        .login-title {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        /* Form Styling */
+        .login-form .input-group {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .login-form input:focus {
+            border-color: #cb9311;
+            outline: none;
+        }
+
+        /* Login Button */
+        .login-button {
+            width: 100%;
+            padding: 0.8rem;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .login-button:hover {
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+        }
+
+        /* Extra Links */
+        .extra-links {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .extra-links a {
+            color: #6a11cb;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .extra-links a:hover {
+            color: #2575fc;
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 1.5rem;
+            }
+
+            .login-title {
+                font-size: 1.5rem;
+            }
+
+            .login-form input,
+            .login-button {
+                font-size: 0.9rem;
+            }
+
+            .extra-links {
+                font-size: 0.8rem;
+            }
+        }

@@ -1,0 +1,65 @@
+.choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.mybtn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mybtn h1 {
+    margin: 0;
+    font-size: 1.5rem; /* Adjusted for responsiveness */
+    font-weight: bold;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.mybtn{
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .choice {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mybtn h1 {
+        font-size: 1.3rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    button {
+        align-self: flex-end;
+        margin-top: 5px;
+    }
+}
