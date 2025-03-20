@@ -9,11 +9,11 @@ const db2 = require('./dbfordeliver.js');
 const  {Server} = require ('socket.io')
 const Foodsdb = require('./foodsdb')
 const orderdb=require('./exportcondb')
-const Food = require('./usefoodsdb');
+const Food = require('./dbsetup/usefoodsdb.js');
 const checkandsend =require('./foodexport')
 const order=require('./orderedtodeliver')
 
-const Fooddeli = require('./usefoodsdb');
+const Fooddeli = require('./dbsetup/usefoodsdb.js');
 
 dotenv.config();
 const app = express();
